@@ -4,6 +4,9 @@ import forms from "./modules/forms";
 import mask from "./modules/mask";
 import checkTextInputs from "./modules/checkTextInputs";
 import showMoreStyels from "./modules/showMoreStyels";
+import calc from "./modules/calc";
+import filter from "./modules/filter";
+import pictureSize from "./modules/pictureSize";
 
 window.addEventListener('DOMContentLoaded', ()=>{
     'use strict';
@@ -15,4 +18,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
     showMoreStyels('.button-styles', '#styles .row');
+    calc('#size', '#material', '#options', '.promocode','.calc-price')
+    filter();
+    pictureSize('.sizes-block');
 });
